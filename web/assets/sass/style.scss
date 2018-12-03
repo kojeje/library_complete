@@ -1,4 +1,116 @@
 @import 'partials/var';
 @import 'partials/states';
 @import 'partials/fonts';
+@import "partials/animation";
+
+body
+{
+  padding: 0;
+  width: 100%;
+
+
+
+}
+a
+{
+  color:$white;
+  text-decoration: none;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+
+}
+img
+{ display: block;
+}
+
+header
+{
+  height:20vh;
+  width: auto;
+  background-color:#999;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top:0;
+
+
+  .logo
+  {
+    width: 60%;
+    margin:10px;
+    margin-left: 30px;
+    img
+    {
+      width: 100%;
+    }
+
+  }
+}
+  .banner
+  {
+    padding: 0;
+    margin: 0;
+    height: 80vh;
+    #overlay
+    {
+      position: absolute;
+      align-items: center;
+      color: #fff;
+      background-color: rgba(25,17,0,0.6);
+      bottom: 0;
+      width: 50%;
+      height: 35%;
+      margin-left: 25%;
+      margin-bottom: 20%;
+      border-radius:50px;
+      h1
+      {
+        text-align: center;
+        font-size:3em;
+        font-weight: bolder;
+        margin-bottom: 5%;
+      }
+      p
+      {
+        text-align: center;
+        font-size:1.2em;
+        font-weight: bold;
+      }
+
+
+    }
+
+
+    }
+    .bouton
+    {
+      background-color: blue;
+      padding: 30px;
+      width: 30%;
+      margin: auto;
+      border:3px solid white;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      border-radius: 50px;
+      transition: 1s;
+
+    }
+    .carousel-item
+    {
+      max-height: 85vh;
+    }
+
+    #about
+    {
+      padding: 100px;
+      padding-top:30vh;
+    }
+
+
+
+
+
+
 

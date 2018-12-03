@@ -18,10 +18,24 @@
     class LivreController extends Controller
     {
 //
+        /**
+         * @Route("/", name="home")
+         */
+
+
+        public function HomeTestAction()
+
+//       Doctrine fait le lien entre la base de données et la programmation objet
+        {
+
+            return $this->render("@App/Default/home.html.twig");
+
+        }
+
 
 
         /**
-         * @Route("/", name="livre")
+         * @Route("/livres", name="livres")
          */
         public function livresTestAction()
 
@@ -30,11 +44,11 @@
             $repository = $this->getDoctrine()->getRepository(Livre::class);
 
             $livres = $repository->findAll();
-            var_dump($livres);die;
+
 //            return $this->render("@App/Default/livre.html.twig",
 //                [
 //                    'livres' => $livres
 //                ]);
-            return $this->render("@App/Default/");
+            return $this->render("@App/Default/livres.html.twig");
         }
     }
