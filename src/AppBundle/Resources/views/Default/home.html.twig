@@ -14,37 +14,9 @@
 <body>
 {% block banner %}{% endblock %}
 {% include '@App/Default/header.html.twig' %}
-<section id="about">
-    <article class="container">
-        <h1>LOREM</h1>
-        <div class="row">
-        <p class="col-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio, dolor et id incidunt laboriosam maxime minus necessitatibus non odio odit optio praesentium provident suscipit veritatis voluptas, voluptatum. Eos, nisi?<br>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium culpa, earum enim eos est fuga ipsam magni optio pariatur placeat rem sed sit tenetur voluptatem? Perferendis, quam sed! Ullam?
-        </p>
+{% block content %}{% endblock %}
 
-        <p class="col-4">
-            <img src="{{ asset('assets/img/12.jpg') }}" alt="oldbook">
-        </p>
-
-        <p class="col-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio, dolor et id incidunt laboriosam maxime minus necessitatibus non odio odit optio praesentium provident suscipit veritatis voluptas, voluptatum. Eos, nisi?<br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium culpa, earum enim eos est fuga ipsam magni optio pariatur placeat rem sed sit tenetur voluptatem? Perferendis, quam sed! Ullam?
-        </p>
-        </div>
-        <div class="row">
-        <p class="col-4">
-            <img src="{{ asset('assets/img/09.jpg') }}" alt="">
-        </p>
-        <p class="col-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio, dolor et id incidunt laboriosam maxime minus necessitatibus non odio odit optio praesentium provident suscipit veritatis voluptas, voluptatum. Eos, nisi?<br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium culpa, earum enim eos est fuga ipsam magni optio pariatur placeat rem sed sit tenetur voluptatem? Perferendis, quam sed! Ullam?
-        </p>
-        <p class="col-4">
-            <img src="{{ asset('assets/img/16.jpg') }}" alt="">
-            
-        </p>
-        </div>
-    </article>
-</section>
-<body></body>
+</body>
 <footer></footer>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
