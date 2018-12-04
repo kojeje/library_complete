@@ -1,0 +1,34 @@
+{% extends "@App/Default/home.html.twig" %}
+{#@todo En chantier: intégrer le formulaire dans la mise en page bootstrap#}
+{% block content %}
+    <section id="about">
+        <article class="container">
+            <h1>contact</h1>
+            <form class="row" id="contact_form">
+                <div class="col-4 field">
+                    <label for=""></label>
+                </div>
+
+                <p class="col-4">
+                    <img src="{{ asset('assets/img/12.jpg') }}" alt="oldbook">
+                </p>
+
+                <p class="col-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio, dolor et id incidunt laboriosam maxime minus necessitatibus non odio odit optio praesentium provident suscipit veritatis voluptas, voluptatum. Eos, nisi?<br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium culpa, earum enim eos est fuga ipsam magni optio pariatur placeat rem sed sit tenetur voluptatem? Perferendis, quam sed! Ullam?
+                </p>
+            </form>
+            <div class="row">
+                <p class="col-4">
+                    <img src="{{ asset('assets/img/09.jpg') }}" alt="">
+                </p>
+                <p class="col-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio, dolor et id incidunt laboriosam maxime minus necessitatibus non odio odit optio praesentium provident suscipit veritatis voluptas, voluptatum. Eos, nisi?<br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium culpa, earum enim eos est fuga ipsam magni optio pariatur placeat rem sed sit tenetur voluptatem? Perferendis, quam sed! Ullam?
+                </p>
+                <p class="col-4">
+                    <img src="{{ asset('assets/img/16.jpg') }}" alt="">
+
+                </p>
+            </div>
+        </article>
+    </section>
+{% endblock %}
