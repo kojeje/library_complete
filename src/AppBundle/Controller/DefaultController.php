@@ -23,14 +23,11 @@
         /**
          * @Route("/", name="home")
          */
-        public function HomeTestAction()
+        public function HomeAction()
+        {
+            return $this->render('@App/Pages/home.html.twig');
+        }
 
-
-    {
-
-        return $this->render("@App/Default/banner.html.twig");
-
-    }
         /**
          * @Route("/contact", name="contact")
          */

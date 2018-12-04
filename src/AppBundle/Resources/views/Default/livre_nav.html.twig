@@ -1,0 +1,40 @@
+<div class="dropdown btn-group dropleft">
+    <button class="btn btn-secondary dropdown-toggle bouton_menu" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img class="user_area" src="{{ asset('assets/img/plume.png') }}" alt="us_a">
+
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+        {% if app.user %}
+
+            <p id="dropdown-item">
+                {{ app.user.username }}
+            </p>
+
+            <a class="dropdown-item" href="{{ path('fos_user_profile_show') }}">
+                <p>
+                    Tableau de bord
+                </p>
+            </a>
+            <hr>
+            <a class="dropdown-item" href="{{ path('fos_user_security_logout') }}">
+                <p>
+                    logout
+                </p>
+            </a>
+
+        {% else %}
+            <a class="dropdown-item" href="{{ path('fos_user_security_login') }}">
+                <p>
+                    login
+                </p>
+            </a>
+
+        {% endif %}
+
+
+
+
+
+    </div>
+</div>
