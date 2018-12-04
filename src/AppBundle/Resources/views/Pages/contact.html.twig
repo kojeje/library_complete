@@ -1,4 +1,4 @@
-{% extends "@App/Default/home.html.twig" %}
+{% extends "@App/Base/base.html.twig" %}
 {#@todo terminer page contact#}
 
 {% block banner %}
@@ -17,7 +17,7 @@
 
                                             width="900"
 
-                                            height="600"
+
 
                                             frameborder="0"
 
@@ -47,13 +47,16 @@
                                         <p class="col-4" id="tel">04 75 86 95 35</p>
                                         <div class="offset-4"></div>
                                     </div>
+
+                                        <a href="#ancre1">
+                                            <h1 class="bouton">
+                                                GO!
+                                            </h1>
+                                        </a>
+
                                 </figcaption>
                             </figure>
-                            <a href="#ancre1">
-                                <h1 class="bouton">
-                                    GO!
-                                </h1>
-                            </a>
+
                         </div>
                     </div>
                 </div>
@@ -62,4 +65,89 @@
 
     </div>
 {% endblock %}
+
+{% block content %}
+    <section id="ancre1">
+        <div class="row" id="virtual_header"></div>
+        <article class="container">
+            <h1>CONTACT</h1>
+            <form id="form1" action="post"> </form>
+            <div class="row">
+                <div class="col-4">
+                    <div class="field">
+                        <label for="f_name" form="form1">
+                            Nom
+                        </label>
+                        <input type="text" form="form1" name="f_name" placeholder="Indiquez votre prénom">
+
+                    </div>
+                    <div class="field">
+                        <label for="l_name" form="form1">
+                            Prénom
+                        </label>
+                        <input type="text" form="form1" name="l_name" required placeholder="Indiquez votre nom">
+                    </div>
+                </div>
+
+
+
+                <div class="col-4">
+                    <div class="field">
+                        <label for="tel" form="form1">
+                            tel
+                        </label>
+                        <input type="tel" form="form1" name="tel" placeholder="Indiquez votre n° de téléphone">
+
+                    </div>
+                    <div class="field">
+
+                            <label for="email" form="form1">
+                                email
+                            </label>
+                            <input type="email" form="form1" name="email" placeholder="Indiquez votre adresse email">
+
+
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="{{ asset('assets/img/16.jpg') }}" alt="oldbook">
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="field">
+
+                            <label for="subject" form="form1">
+                                sujet
+                            </label>
+                            <input type="text" form="form1" name="subject" placeholder="Indiquez le sujet du message">
+
+
+                        </div>
+                        <div class="field">
+                            <label for="msg">Votre message</label>
+                            <textarea name="msg" id="msg" cols="35" rows="7" placeholder="Écrivez ici votre message"></textarea>
+
+
+                        </div>
+                    </div>
+
+                <div class="col-4" id="child">
+
+                    <img src="{{ asset('assets/img/12.jpg') }}" alt="">
+
+                </div>
+
+                <div class="col-4" id="sub_btn">
+                    <input class="bouton2" type="submit" value="ENVOYER">
+                </div>
+
+
+            </div>
+        </article>
+    </section>
+{% endblock %}
+
+
+
 
