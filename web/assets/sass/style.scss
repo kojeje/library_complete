@@ -24,6 +24,11 @@ a
 }
 img
 { display: block;
+  width: 100%;
+}
+ul
+{
+  list-style-type: none;
 }
 
 header
@@ -31,9 +36,10 @@ header
   height:20vh;
   width: auto;
   background-color:#999;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
   position: sticky;
   top:0;
+  z-index: 1000;
 
 
   .logo
@@ -53,7 +59,7 @@ header
     padding: 0;
     margin: 0;
     height: 80vh;
-    #overlay
+    .overlay
     {
       position: absolute;
       align-items: center;
@@ -61,9 +67,8 @@ header
       background-color: rgba(25,17,0,0.6);
       bottom: 0;
       width: 50%;
-      height: 35%;
       margin-left: 25%;
-      margin-bottom: 20%;
+      margin-bottom: 10%;
       border-radius:50px;
       h1
       {
@@ -71,6 +76,7 @@ header
         font-size:3em;
         font-weight: bolder;
         margin-bottom: 5%;
+
       }
       p
       {
@@ -88,6 +94,7 @@ header
     {
       background-color: blue;
       padding: 30px;
+      margin-top: 30px;
       width: 30%;
       margin: auto;
       border:3px solid white;
@@ -106,6 +113,13 @@ header
     {
       padding: 100px;
       padding-top:30vh;
+      h1{
+        padding: 50px;
+      }
+      p
+      {
+        padding: 30px;
+      }
     }
 
 

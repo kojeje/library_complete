@@ -18,19 +18,7 @@
     class LivreController extends Controller
     {
 //
-        /**
-         * @Route("/", name="home")
-         */
 
-
-        public function HomeTestAction()
-
-//       Doctrine fait le lien entre la base de données et la programmation objet
-        {
-
-            return $this->render("@App/Default/home.html.twig");
-
-        }
 
 
 

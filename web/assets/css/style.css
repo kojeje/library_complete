@@ -7,6 +7,9 @@ a:hover {
   border-color: #000;
   color: #000; }
 
+#overlay:hover {
+  background-color: rgba(25, 17, 0, 0.1); }
+
 #about {
   transition: 5s; }
 
@@ -24,15 +27,20 @@ a {
   transition: 0.4s; }
 
 img {
-  display: block; }
+  display: block;
+  width: 100%; }
+
+ul {
+  list-style-type: none; }
 
 header {
   height: 20vh;
   width: auto;
   background-color: #999;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
   position: sticky;
-  top: 0; }
+  top: 0;
+  z-index: 1000; }
   header .logo {
     width: 60%;
     margin: 10px;
@@ -44,23 +52,22 @@ header {
   padding: 0;
   margin: 0;
   height: 80vh; }
-  .banner #overlay {
+  .banner .overlay {
     position: absolute;
     align-items: center;
     color: #fff;
     background-color: rgba(25, 17, 0, 0.6);
     bottom: 0;
     width: 50%;
-    height: 35%;
     margin-left: 25%;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
     border-radius: 50px; }
-    .banner #overlay h1 {
+    .banner .overlay h1 {
       text-align: center;
       font-size: 3em;
       font-weight: bolder;
       margin-bottom: 5%; }
-    .banner #overlay p {
+    .banner .overlay p {
       text-align: center;
       font-size: 1.2em;
       font-weight: bold; }
@@ -68,6 +75,7 @@ header {
 .bouton {
   background-color: blue;
   padding: 30px;
+  margin-top: 30px;
   width: 30%;
   margin: auto;
   border: 3px solid white;
@@ -82,5 +90,9 @@ header {
 #about {
   padding: 100px;
   padding-top: 30vh; }
+  #about h1 {
+    padding: 50px; }
+  #about p {
+    padding: 30px; }
 
 /*# sourceMappingURL=style.css.map */

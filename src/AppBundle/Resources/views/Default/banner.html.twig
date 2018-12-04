@@ -1,7 +1,7 @@
+{% extends "@App/Default/home.html.twig" %}
 
 
-
-
+{% block banner %}
     <div class="banner">
         <!--    SECTION -->
         <section class="section">
@@ -31,7 +31,7 @@
 
                                     </div>
                                 </div>
-                                <figcaption id="overlay">
+                                <figcaption id="overlay" class="overlay">
 
                                         <h1 class="black-btn" id="bouton2">LA BIB'd'OccaZ...</h1>
                                     </a>
@@ -39,7 +39,7 @@
                                                       Quand nous les avons lu...<br>
                                                       Nous les partageons!</p>
 
-                                    <a href="#about">
+                                    <a href="#ancre1">
                                         <h1 class="bouton">
                                         GO!
                                         </h1>
@@ -53,5 +53,6 @@
         </section>
 
     </div>
+{% endblock %}
 
 

@@ -12,30 +12,36 @@
     <link rel="stylesheet" type="text/css" href="{{ asset ('assets/css/style.css')  }}">
 </head>
 <body>
-{% include '@App/Default/banner.html.twig' %}
+{% block banner %}{% endblock %}
 {% include '@App/Default/header.html.twig' %}
 <section id="about">
-    <article>
+    <article class="container">
         <h1>LOREM</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio, dolor et id incidunt laboriosam maxime minus necessitatibus non odio odit optio praesentium provident suscipit veritatis voluptas, voluptatum. Eos, nisi?<br>
+        <div class="row">
+        <p class="col-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio, dolor et id incidunt laboriosam maxime minus necessitatibus non odio odit optio praesentium provident suscipit veritatis voluptas, voluptatum. Eos, nisi?<br>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium culpa, earum enim eos est fuga ipsam magni optio pariatur placeat rem sed sit tenetur voluptatem? Perferendis, quam sed! Ullam?
         </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio, dolor et id incidunt laboriosam maxime minus necessitatibus non odio odit optio praesentium provident suscipit veritatis voluptas, voluptatum. Eos, nisi?<br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium culpa, earum enim eos est fuga ipsam magni optio pariatur placeat rem sed sit tenetur voluptatem? Perferendis, quam sed! Ullam?
+
+        <p class="col-4">
+            <img src="{{ asset('assets/img/12.jpg') }}" alt="oldbook">
         </p>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio, dolor et id incidunt laboriosam maxime minus necessitatibus non odio odit optio praesentium provident suscipit veritatis voluptas, voluptatum. Eos, nisi?<br>
+        <p class="col-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio, dolor et id incidunt laboriosam maxime minus necessitatibus non odio odit optio praesentium provident suscipit veritatis voluptas, voluptatum. Eos, nisi?<br>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium culpa, earum enim eos est fuga ipsam magni optio pariatur placeat rem sed sit tenetur voluptatem? Perferendis, quam sed! Ullam?
         </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio, dolor et id incidunt laboriosam maxime minus necessitatibus non odio odit optio praesentium provident suscipit veritatis voluptas, voluptatum. Eos, nisi?<br>
+        </div>
+        <div class="row">
+        <p class="col-4">
+            <img src="{{ asset('assets/img/09.jpg') }}" alt="">
+        </p>
+        <p class="col-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio, dolor et id incidunt laboriosam maxime minus necessitatibus non odio odit optio praesentium provident suscipit veritatis voluptas, voluptatum. Eos, nisi?<br>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium culpa, earum enim eos est fuga ipsam magni optio pariatur placeat rem sed sit tenetur voluptatem? Perferendis, quam sed! Ullam?
         </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio, dolor et id incidunt laboriosam maxime minus necessitatibus non odio odit optio praesentium provident suscipit veritatis voluptas, voluptatum. Eos, nisi?<br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium culpa, earum enim eos est fuga ipsam magni optio pariatur placeat rem sed sit tenetur voluptatem? Perferendis, quam sed! Ullam?
+        <p class="col-4">
+            <img src="{{ asset('assets/img/16.jpg') }}" alt="">
+            
         </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio, dolor et id incidunt laboriosam maxime minus necessitatibus non odio odit optio praesentium provident suscipit veritatis voluptas, voluptatum. Eos, nisi?<br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium culpa, earum enim eos est fuga ipsam magni optio pariatur placeat rem sed sit tenetur voluptatem? Perferendis, quam sed! Ullam?
-        </p>
+        </div>
     </article>
 </section>
 <body></body>
