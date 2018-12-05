@@ -63,7 +63,7 @@
         private $genre;
 
         /**
-         * @ORM\OneToMany(targetEntity="AppBundle\Entity\Auteur", mappedBy="livre")
+         * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Auteur", inversedBy="livre")
          */
         private $auteur;
 

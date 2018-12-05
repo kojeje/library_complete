@@ -21,22 +21,24 @@
 
 
 
-
         /**
          * @Route("/livres", name="livres")
          */
-        public function livresTestAction()
+        public function auteurTestAction()
 
 //       Doctrine fait le lien entre la base de données et la programmation objet
         {
-            $repository = $this->getDoctrine()->getRepository(Livre::class);
+            $repository = $this->getDoctrine()->getRepository(Auteur::class);
 
             $livres = $repository->findAll();
 
-//            return $this->render("@App/Default/livre.html.twig",
-//                [
-//                    'livres' => $livres
-//                ]);
-            return $this->render("@App/Default/livres.html.twig");
+//
+            return $this->render("@App/Pages/livre.html.twig",
+                [
+                    'livres' => $livres
+                ]
+            );
+
         }
+
     }

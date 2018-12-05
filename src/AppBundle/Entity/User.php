@@ -110,13 +110,13 @@
             $this->ad_2 = $ad_2;
         }
 
-        /**
-         * @return mixed
-         */
-        public function getId()
-        {
-            return $this->id;
-        }
+//        /**
+//         * @return mixed
+//         */
+//        public function getId()
+//        {
+//            return $this->id;
+//        }
 
         /**
          * @param mixed $id

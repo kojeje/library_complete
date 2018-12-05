@@ -72,14 +72,14 @@
         private $image;
 
         /**
-         * @ORM\OneToMany(targetEntity="AppBundle\Entity\Country", mappedBy="auteur")
+         * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Country", inversedBy="auteur")
          */
         private $country;
 
-        /**
-         * @ORM\ManyToOne(targetEntity="Livre", inversedBy="auteur")
-         */
-        private $livre;
+//        /**
+//         * @ORM\OneToMany(targetEntity="Livre", mappedBy="auteur")
+//         */
+//        private $livre;
 
 
 

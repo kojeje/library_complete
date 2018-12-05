@@ -48,6 +48,12 @@
          */
         private $lbl;
 
+        /**
+         * @ORM\OneToMany(targetEntity="auteur", mappedBy="country")
+         */
+
+        private $auteur;
+
 
 //      GETTERS & SETTERS
 //      -------------------
@@ -103,5 +109,19 @@
         {
             $this->lbl = $lbl;
         }
+        /**
+         * @return mixed
+         */
+        public function getAuteur()
+        {
+            return $this->auteur;
+        }/**
+         * @param mixed $auteur
+         */
+        public function setAuteur($auteur)
+        {
+            $this->auteur = $auteur;
+        }
 
-    }
+
+        }

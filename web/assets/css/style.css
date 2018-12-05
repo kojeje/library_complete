@@ -71,6 +71,7 @@ header {
   height: 25vh; }
 
 .banner {
+  position: relative;
   padding: 0;
   margin: 0;
   height: 80vh; }
@@ -81,8 +82,11 @@ header {
     background-color: rgba(25, 17, 0, 0.6);
     bottom: 0;
     width: 50%;
+    min-height: 50%;
+    max-height: 90%;
     margin-left: 25%;
-    margin-bottom: 9%;
+    margin-bottom: 10%;
+    margin-top: auto;
     border-radius: 50px;
     padding: 20px; }
     .banner .overlay h1 {
@@ -93,39 +97,47 @@ header {
       text-align: center;
       font-size: 1.2em;
       font-weight: bold; }
+  .banner .bouton, .banner .bouton2 {
+    background-color: blue;
+    padding: 30px;
+    margin-top: 30px;
+    width: 30%;
+    margin: auto;
+    border: 3px solid white;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    transition: 1s;
+    color: #fff; }
+  .banner .bouton2 {
+    padding: 0;
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto; }
+  .banner .carousel-item {
+    max-height: 85vh; }
+  .banner #about {
+    padding: 100px;
+    padding-top: 30vh; }
+    .banner #about h1 {
+      padding: 50px; }
+    .banner #about p {
+      padding: 30px; }
 
-.bouton, .bouton2 {
-  background-color: blue;
-  padding: 30px;
-  margin-top: 30px;
-  width: 30%;
+.overlay2 {
+  position: relative;
+  align-items: center;
+  color: #fff;
+  background-color: rgba(25, 17, 0, 0.6);
+  bottom: 0;
+  width: 50%;
   margin: auto;
-  border: 3px solid white;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
+  margin-bottom: 5%;
   border-radius: 50px;
-  transition: 1s;
-  color: #fff; }
-
-.bouton2 {
-  padding: 0;
-  display: block;
-  width: 60%;
-  height: 60%;
-  margin: auto;
-  margin-top: auto;
-  margin-bottom: auto; }
-
-.carousel-item {
-  max-height: 85vh; }
-
-#about {
-  padding: 100px;
-  padding-top: 30vh; }
-  #about h1 {
-    padding: 50px; }
-  #about p {
-    padding: 30px; }
+  padding: 20px; }
 
 .dropdown-menu {
   background-color: #ffb630 !important;
